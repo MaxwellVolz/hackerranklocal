@@ -1,0 +1,14 @@
+{
+  "name": "hackerranklocal",
+  "version": "1.0.0",
+  "description": "local node service to quickly run hackerrank tests",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Volz",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

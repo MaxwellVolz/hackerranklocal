@@ -1,0 +1,48 @@
+'use strict';
+
+let sampleInput = "x = 2y = 3";
+
+
+process.stdin.resume();
+process.stdin.setEncoding('ascii');
+
+var input_stdin = "";
+var input_stdin_array = "";
+var input_currentline = 0;
+
+process.stdin.on('data', function (data) {
+    // console.log(data);
+    input_stdin += data;
+});
+
+process.stdin.on('end', function () {
+    input_stdin_array = input_stdin.split("\n");
+    main();    
+});
+
+function readLine() {
+    return input_stdin_array[input_currentline++];
+}
+function solveMeFirst(a, b) {
+  // Hint: Type return a+b below   
+    return a+b;
+}
+
+function main() {
+    var a = parseInt(readLine());
+    var b = parseInt(readLine());
+
+    var res = solveMeFirst(a, b);
+
+    console.log("Answer: " + res);
+    console.log(res == correctAnswer ? "Success!" : "Expected: " + correctAnswer);
+}
+
+const correctAnswer = '1100';
+process.stdin.emit('data', "6");
+process.stdin.emit('data', "\n");
+process.stdin.emit('data', "1 2 3 4 10 11");
+
+process.stdin.emit('end');
+
+// main();
