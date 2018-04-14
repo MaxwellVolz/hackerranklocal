@@ -43,7 +43,6 @@ function migratoryBirds(n, ar) {
 
     console.log("result: " + result);
 
-  
 }
 
 function main() {
